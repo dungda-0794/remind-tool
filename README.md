@@ -28,10 +28,10 @@ time: "Time notify"
 message: "Message notify"
 ```
 
-- setting cron
+- Setting crontab
 ```sh
 crontab -e
 
-*/30 * * * * cd /remindTool && ./main >> /remindTool/logs/tool.log 2>&1
+*/30 * * * * cd ~path/remindTool && ./main >> ~path/remindTool/logs/tool.log 2>&1
 ```
 
