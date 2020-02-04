@@ -43,7 +43,7 @@ func checkTime(strTime string) bool {
 
 func notify(t Task) {
     cmd := exec.Command(
-        "notify-send",
+        "/usr/bin/notify-send",
         fmt.Sprintf("%s at %s", t.Job, t.Time),
         t.Message,
     )
